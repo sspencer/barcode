@@ -1,3 +1,4 @@
+// UPC Info: http://en.wikipedia.org/wiki/Universal_Product_Code
 function UpcEncoder() {
     // Digits 0 - 9: left side, right side
     var Encoding = [
@@ -18,7 +19,7 @@ function UpcEncoder() {
     // 113 bits per 12 digit upc code (must be 12 digits)
     return function(str) {
         // ***** Pre Condition - UPC is string of 12 digits ******
-        var i, left = "", right = "", digit, offset;
+        var i, left = "", right = "", digit;
 
         for (i = 0; i < 12; i++) {
             digit = str.charCodeAt(i) - 48;

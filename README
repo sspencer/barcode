@@ -5,4 +5,3 @@ To run from command line, just type:
 $ node barcode.js
 
 Todo: only accept 12 digits as input
-Render this into a canvas
